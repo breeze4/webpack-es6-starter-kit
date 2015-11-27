@@ -10,9 +10,9 @@
     "eslint-config-eslint": "^1.0.1",
     "gulp": "^3.9.0",
     "gulp-livereload": "^3.8.1",
+    "gulp-util": "^3.0.7",
     "node-libs-browser": "^0.5.3",
-    "webpack": "^1.12.9",
-    "webpack-stream": "^2.2.0"
+    "webpack": "^1.12.9"
   },
   "main": "es6/main.js",
   "dependencies": {},

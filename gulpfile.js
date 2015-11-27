@@ -1,11 +1,16 @@
 var gulp = require("gulp");
+var gutil = require("gulp-util");
 var livereload = require("gulp-livereload");
-var webpack = require("webpack-stream");
+var webpack = require("webpack");
 
 gulp.task("webpack", function () {
-    gulp.src("es6/main.js")
-        .pipe(webpack( require("./webpack.config.js") ))
-        .pipe(gulp.dest("dist/"));
+    webpack(
+        require("./webpack.config.js"),
+        function (err, stats) {
+            if (err) throw new gutil.PluginError("webpack", err);
+            gutil.log(stats.toString({ colors: true }));
+        }
+    );
 });
 
 gulp.task("watch", function () {
