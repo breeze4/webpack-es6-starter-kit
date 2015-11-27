@@ -1,13 +1,12 @@
 var path = require("path");
-var webpack = require("webpack");
-var LiveReloadPlugin = require("webpack-livereload-plugin");
 
 module.exports = {
     entry: "./es6/main.js",
     output: {
-        path: __dirname,
+        path: path.join(__dirname, "dist" ),
         filename: "bundle.js",
     },
+    watch: true,
     module: {
         loaders: [
             {
@@ -19,10 +18,6 @@ module.exports = {
             },
         ],
     },
-    plugins: [
-        new webpack.NoErrorsPlugin(),
-        new LiveReloadPlugin(),
-    ],
     stats: {
         colors: true,
     },
