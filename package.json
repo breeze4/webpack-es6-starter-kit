@@ -13,5 +13,23 @@
     "node-libs-browser": "^0.5.3",
     "webpack": "^1.12.9",
     "webpack-stream": "^2.2.0"
-  }
+  },
+  "main": "es6/main.js",
+  "dependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phparkle/webpack-es6-starter.git"
+  },
+  "keywords": [
+    "webpack",
+    "es6",
+    "gulp",
+    "livereload",
+    "starter"
+  ],
+  "author": "Parkle Lee <phparkle@gmail.com>",
+  "license": "MIT"
 }
