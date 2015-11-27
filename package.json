@@ -1,6 +1,6 @@
 {
   "name": "webpack-es6-starter",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A minimal ES6 starter project that uses webpack, gulp and livereload.",
   "devDependencies": {
     "babel-core": "^6.0.20",
