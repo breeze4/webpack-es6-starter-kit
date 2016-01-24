@@ -18,7 +18,7 @@ gulp.task("watch", function () {
 
     gulp.watch([
         "dist/bundle.js",
-        "index.html",
+        "index.html"
     ], function (event) {
         livereload.changed(event);
     });
