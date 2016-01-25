@@ -1,5 +1,5 @@
 import React from 'react';
-var ReactDOM = require('react-dom');
+import ReactDOM from 'react-dom';
 
 export default class Hello extends React.Component {
     render() {
@@ -7,4 +7,4 @@ export default class Hello extends React.Component {
     }
 }
 
-React.render(<Hello/>, document.getElementById('hello'));
+ReactDOM.render(<Hello/>, document.getElementById('hello'));
